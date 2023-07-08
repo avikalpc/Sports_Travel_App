@@ -1,0 +1,53 @@
+.founderheading{
+    text-align: center;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fadein {
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (min-width: 768px) {
+    .col-lg-4 {
+        animation-name: slidein;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slidein {
+        from { opacity: 0; transform: translateX(-100%); }
+        to { opacity: 1; transform: translateX(100); }
+    }
+}
+
+.cont{
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    top:5%;
+    left:15%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

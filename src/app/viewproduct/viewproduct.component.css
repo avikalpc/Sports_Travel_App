@@ -1,0 +1,46 @@
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* Animate the form labels on focus */
+.form-control:focus + label {
+    color: #ff5c5c;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  
+  /* Animate the submit button on hover */
+  .btn-primary:hover {
+    background-color: #ff5c5c;
+    border-color: #ff5c5c;
+    transform: scale(1.1);
+  }
+  
+  /* Animate the location information on hover */
+  .col-md-6:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animate the navbar links on hover */
+  .nav-item a:hover {
+    color: #ff5c5c;
+    transform: translateY(-3px);
+  }
+  
+  /* Animate the navbar brand on hover */
+  .navbar-brand:hover {
+    color: #ff5c5c;
+    transform: rotate(360deg);
+    transition: transform 1s ease-in-out;
+  }
+  
+  /* Animate the navbar toggler icon on click */
+  .navbar-toggler-icon {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    transform: rotate(90deg);
+  }
+  

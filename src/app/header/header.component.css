@@ -1,0 +1,38 @@
+header {
+    
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    position: relative;
+    animation: slide-in 1s ease-out forwards;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .logo h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+  }
+    
+  .logo h1:hover {
+    color: red;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+}

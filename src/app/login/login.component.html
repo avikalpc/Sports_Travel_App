@@ -1,0 +1,30 @@
+<div class="">
+<div class="container-fluid" id="logpage" class="anime">
+    <div class="borders">
+        <div>
+           <form action="" name="form" (ngSubmit)="f.form.valid && submit()" #f="ngForm">
+                <h4 id="title">LOGIN</h4>
+                <div class="form-group">
+                <label for="" class="form-label pt-5">Username</label>
+                <input type="text" name="username" id="" class="form-control" [(ngModel)]="username"
+                #uname="ngModel" pattern="[a-zA-Z]{5,}" required title="enter 5 or more characters"
+                placeholder="Enter your name">    
+                 </div>   
+
+                <div class="form-group"> 
+                <label for="" class="form-label pt-5">Password</label>
+                <input type="password" name="password" class="form-control" id="" [(ngModel)]="password"
+                #pwd="ngModel" required title="first 3 letters of username and 123" placeholder="first 3 letters of username and 123">    
+                </div>    
+                    <div class="buttons">
+                    <button type="submit" class="btn btn-success" [disabled]="!f.form.valid">Login</button>  
+                    <button type="reset" class="btn btn-danger">Cancel</button> 
+                    </div>   
+            </form>     
+        </div>    
+    </div>    
+</div>
+</div>
+
+
+
